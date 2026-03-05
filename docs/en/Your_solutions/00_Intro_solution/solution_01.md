@@ -1,300 +1,214 @@
-# Vector Algebra – Step by Step Solution
+## Problem 1. Vector Algebra for the L6 Physics Basics  
 
-Given:
-
+Given  
 \[
-\vec{a} = [2, 1, -3]
-\]
-
-\[
-\vec{b} = [4, -2, 1]
+\vec{a} = [2,1,-3], 
+\qquad 
+\vec{b} = [4,-2,1].
 \]
 
 ---
 
-# (a) Magnitude of Each Vector
+### a) Magnitude of each vector  
 
-## Formula for Magnitude of a Vector
-
-For a vector:
+Magnitude in 3D:
 
 \[
-\vec{v} = [x, y, z]
+|\vec{v}| = \sqrt{v_x^2 + v_y^2 + v_z^2}.
 \]
 
-The magnitude is:
-
-\[
-|\vec{v}| = \sqrt{x^2 + y^2 + z^2}
-\]
-
----
-
-## Magnitude of **a**
+For \(\vec{a}\):
 
 \[
 |\vec{a}| = \sqrt{2^2 + 1^2 + (-3)^2}
 \]
-
-Step-by-step:
 
 \[
 = \sqrt{4 + 1 + 9}
 \]
 
 \[
-= \sqrt{14}
+= \sqrt{14}.
 \]
 
-\[
-|\vec{a}| = \sqrt{14}
-\]
-
----
-
-## Magnitude of **b**
+For \(\vec{b}\):
 
 \[
 |\vec{b}| = \sqrt{4^2 + (-2)^2 + 1^2}
 \]
-
-Step-by-step:
 
 \[
 = \sqrt{16 + 4 + 1}
 \]
 
 \[
-= \sqrt{21}
+= \sqrt{21}.
 \]
 
+So,
+
 \[
-|\vec{b}| = \sqrt{21}
+|\vec{a}| = \sqrt{14}, 
+\qquad 
+|\vec{b}| = \sqrt{21}.
 \]
 
 ---
 
-# (b) Dot Product
+### b) Dot product \(\vec{a}\cdot\vec{b}\)
 
-## Formula for Dot Product
+Dot product formula:
 
 \[
-\vec{a} \cdot \vec{b} = a_1b_1 + a_2b_2 + a_3b_3
+\vec{a}\cdot\vec{b} = a_x b_x + a_y b_y + a_z b_z.
 \]
-
----
 
 Substitute values:
 
 \[
-= (2)(4) + (1)(-2) + (-3)(1)
+\vec{a}\cdot\vec{b} = 2\cdot4 + 1\cdot(-2) + (-3)\cdot1
 \]
-
-Step-by-step:
 
 \[
 = 8 - 2 - 3
 \]
 
 \[
-= 3
+= 3.
 \]
 
-\[
-\vec{a} \cdot \vec{b} = 3
-\]
-
----
-
-# (c) Cross Product
-
-## Formula for Cross Product
+Therefore,
 
 \[
-\vec{a} \times \vec{b} =
-\begin{vmatrix}
-\mathbf{i} & \mathbf{j} & \mathbf{k} \\
-a_1 & a_2 & a_3 \\
-b_1 & b_2 & b_3
-\end{vmatrix}
+\vec{a}\cdot\vec{b} = 3.
 \]
 
 ---
 
-Substitute values:
+### c) Cross product \(\vec{a}\times\vec{b}\)
+
+Using the determinant method:
 
 \[
-=
+\vec{a}\times\vec{b} =
 \begin{vmatrix}
-\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+\hat{i} & \hat{j} & \hat{k} \\
 2 & 1 & -3 \\
 4 & -2 & 1
-\end{vmatrix}
+\end{vmatrix}.
 \]
 
----
-
-### Expand the determinant
+Expand along the first row:
 
 \[
-= \mathbf{i}
+= \hat{i}
 \begin{vmatrix}
 1 & -3 \\
 -2 & 1
 \end{vmatrix}
 -
-\mathbf{j}
+\hat{j}
 \begin{vmatrix}
 2 & -3 \\
 4 & 1
 \end{vmatrix}
 +
-\mathbf{k}
+\hat{k}
+\begin{vmatrix}
+2 & 1 \\
+4 & -2
+\end{vmatrix}.
+\]
+
+Now compute each \(2\times2\) determinant:
+
+First term:
+
+\[
+\begin{vmatrix}
+1 & -3 \\
+-2 & 1
+\end{vmatrix}
+= (1)(1) - (-3)(-2)
+= 1 - 6
+= -5.
+\]
+
+Second term:
+
+\[
+\begin{vmatrix}
+2 & -3 \\
+4 & 1
+\end{vmatrix}
+= (2)(1) - (-3)(4)
+= 2 - (-12)
+= 14.
+\]
+
+Third term:
+
+\[
 \begin{vmatrix}
 2 & 1 \\
 4 & -2
 \end{vmatrix}
-\]
-
----
-
-### Compute each 2×2 determinant
-
-First determinant:
-
-\[
-(1)(1) - (-3)(-2)
-\]
-
-\[
-= 1 - 6
-\]
-
-\[
-= -5
-\]
-
----
-
-Second determinant:
-
-\[
-(2)(1) - (-3)(4)
-\]
-
-\[
-= 2 - (-12)
-\]
-
-\[
-= 14
-\]
-
----
-
-Third determinant:
-
-\[
-(2)(-2) - (1)(4)
-\]
-
-\[
+= (2)(-2) - (1)(4)
 = -4 - 4
+= -8.
 \]
 
+Substitute back:
+
 \[
-= -8
+\vec{a}\times\vec{b}
+= -5\hat{i} - 14\hat{j} - 8\hat{k}.
+\]
+
+In vector form:
+
+\[
+\vec{a}\times\vec{b} = [-5,-14,-8].
 \]
 
 ---
 
-### Substitute back
+### d) Angle between the vectors  
+
+Formula:
 
 \[
-= -5\mathbf{i} - 14\mathbf{j} - 8\mathbf{k}
+\vec{a}\cdot\vec{b} = |\vec{a}|\,|\vec{b}| \cos\theta.
 \]
+
+Solve for \(\cos\theta\):
 
 \[
-\vec{a} \times \vec{b} = [-5, -14, -8]
+\cos\theta =
+\frac{\vec{a}\cdot\vec{b}}
+{|\vec{a}|\,|\vec{b}|}.
 \]
-
----
-
-# (d) Angle Between the Vectors
-
-## Formula
-
-\[
-\vec{a} \cdot \vec{b} = |\vec{a}| |\vec{b}| \cos\theta
-\]
-
-Solve for \( \cos\theta \):
-
-\[
-\cos\theta = \frac{\vec{a} \cdot \vec{b}}{|\vec{a}| |\vec{b}|}
-\]
-
----
 
 Substitute known values:
 
 \[
-\cos\theta = \frac{3}{\sqrt{14}\sqrt{21}}
+\cos\theta =
+\frac{3}{\sqrt{14}\sqrt{21}}
+=
+\frac{3}{\sqrt{294}}.
 \]
 
-\[
-= \frac{3}{\sqrt{294}}
-\]
+Therefore,
 
 \[
-\cos\theta = \frac{3}{\sqrt{294}}
-\]
-
----
-
-### Now find the angle
-
-\[
-\theta = \cos^{-1}\left(\frac{3}{\sqrt{294}}\right)
+\theta =
+\cos^{-1}\!\left(\frac{3}{\sqrt{294}}\right).
 \]
 
 Approximate value:
 
 \[
-\sqrt{294} \approx 17.15
-\]
-
-\[
-\cos\theta \approx \frac{3}{17.15} \approx 0.175
-\]
-
-\[
-\theta \approx 79.9^\circ
+\theta \approx 79.9^\circ.
 \]
 
 ---
-
-# ✅ Final Answers
-
-Magnitude:
-\[
-|\vec{a}| = \sqrt{14}
-\]
-\[
-|\vec{b}| = \sqrt{21}
-\]
-
-Dot Product:
-\[
-\vec{a} \cdot \vec{b} = 3
-\]
-
-Cross Product:
-\[
-\vec{a} \times \vec{b} = [-5, -14, -8]
-\]
-
-Angle Between Them:
-\[
-\theta = \cos^{-1}\left(\frac{3}{\sqrt{294}}\right) \approx 79.9^\circ
-\]
